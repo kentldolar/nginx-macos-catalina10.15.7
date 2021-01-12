@@ -16,22 +16,23 @@ server {
         listen       8080;
         server_name  localhost;
 `
-**change listen: 8080 later, if test is successful**
+- **change listen: 8080 later, if test is successful**
 
 ### Go to servers dir
 `vi /usr/local/etc/nginx/servers/nginx.conf`
 
 ### Copy paste below: **Change <USERS> to your folder
-` server {
-    listen 8080;
-    server_name dev.nginx;
+    server {
+      listen 8080;
+      server_name dev.nginx;
 
-    location / {
-      root /Users/<USERS>/Projects/G_github;
-      index index.html index.htm;
+
+      location / {
+        root /Users/<USERS>/Projects/G_github;
+        index index.html index.htm;
+      }
     }
-  }
-`
+
 
 ### Create Directory
 `
